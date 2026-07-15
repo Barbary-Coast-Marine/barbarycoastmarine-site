@@ -306,3 +306,24 @@ input, textarea {
 @media (max-width: 960px) {
   .pricing-grid { grid-template-columns: 1fr; }
 }
+
+/* Team page */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.team-member {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: center;
+}
+.team-member h3 { margin-bottom: 0.2rem; }
+.team-member .role { color: var(--primary); font-weight: 600; font-size: 0.92rem; margin: 0 0 0.6rem; }
+.team-member p:last-child { color: var(--muted); margin: 0; font-size: 0.92rem; }
+
+@media (max-width: 860px) {
+  .team-grid { grid-template-columns: 1fr; }
+}
